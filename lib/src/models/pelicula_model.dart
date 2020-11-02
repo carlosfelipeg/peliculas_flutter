@@ -61,4 +61,14 @@ class Pelicula {
     overview=json['overview'];
     releaseDate=json['release_date'];
   }
+
+
+  getPosterImg() {
+    if(posterPath == null){
+      return 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.evisionstore.com%2Findex.php%3Fcategoria%3Darticle%26modelo%3D5274&psig=AOvVaw1zD9ziD9CGYAVM_sl1YfSM&ust=1604426289196000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjWtOu35OwCFQAAAAAdAAAAABAJ';
+    }else{
+      return 'https://image.tmdb.org/t/p/w500/$posterPath';
+    }
+  }
+
 }
